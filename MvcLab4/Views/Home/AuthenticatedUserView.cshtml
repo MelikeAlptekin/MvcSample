@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "AuthenticatedView";
+}
+
+@inject IHttpContextAccessor context
+
+
+<h1>Sadece Oturum açan kullanıcılar görür</h1>
+<span>
+  User:  @context.HttpContext.User.Identity.Name 
+  
+</span>
+&ensp;
+<a asp-action="logout" asp-controller="auth">LogOut</a>
+
+
+
+
+

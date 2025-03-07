@@ -1,0 +1,23 @@
+﻿
+Nuget ile aşağıdaki kodların migrationlarını alalım.
+
+-- Birden fazla dbContext ile tek bir veritabınında migration aldık.
+
+
+add-Migration AppInit -context ApplicationDbContext -outputdir "Migrations/App"
+update-database -context ApplicationDbContext
+
+
+
+add-Migration IdentityInit -context AppIdentityDbContext -outputdir "Migrations/Identity"
+update-database -context AppIdentityDbContext
+
+
+
+
+
+
+
+
+
+

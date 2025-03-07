@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+@model LoginInput
+
+
+
+<form method="post">
+    <input asp-for="Email" placeholder="e-posta" />
+    <br />
+    <input asp-for="Password" placeholder="Şifre" type="password" />
+    <br />
+    <label>Beni Hatırla !</label>
+    <input type="checkbox" asp-for="RememberMe"/>
+    <br />
+
+    <input type="submit" value="Oturum Aç" />
+</form>
+
+
+<h1>Login</h1>
+
